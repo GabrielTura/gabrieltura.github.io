@@ -1,28 +1,7 @@
-html, body {
-    background-color: #fff;
-    padding-top: 2.5rem;
-    font-family: "Open Sans", Helvetica, sans-serif;
-    color: #787878;
-}
-
-#sideNav, .footer{
-    background-color: #3a3431;
-}
-
-#sideNav .nav-link{
-    letter-spacing: .05rem;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    color: white;
-}
-
-#sideNav .navbar-toggler:focus{
-    outline-color: #d48a6e;
-}
-
 .card{
     border: none;
     margin-bottom: 1rem;
+    padding: 10px;
 }
 
 .card a{
@@ -32,7 +11,7 @@ html, body {
 }
 
 .card a::before{
-    background-image: url(../images/overlay.png);
+    background-image: url(../assets/img/overlay.png);
     border-radius: 0.35rem;
     content: '';
     display: block;
@@ -65,61 +44,4 @@ html, body {
 
 .card a:hover::before, .card a:hover::after{
     opacity: 1;
-}
-
-.footer{
-    padding: .5rem 1rem;
-    font-size: .85rem;
-}
-
-.footer ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-@media screen and (min-width: 992px){
-    body{
-        padding-top: 0;
-        padding-left: 33.33%;
-    }
-
-    #sideNav{
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        width: 33.33%;
-        height: 100vh;
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
-        text-align: center;
-    }
-
-    .img-profile{
-        max-width: 100%;
-        max-height: auto;
-        margin: 2rem auto;
-    }
-
-    #sideNav .navbar-collapse{
-        display: flex;
-        align-items: flex-start;
-        width: 100%;
-        margin-bottom: auto;
-    }
-
-    #sideNav .navbar-nav{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .footer{
-        position: fixed;
-        bottom: 1rem;
-        left: 0;
-        width: 30%;
-        background-color: transparent;
-        z-index: 1031;
-    }
 }
